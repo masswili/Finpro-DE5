@@ -20,19 +20,19 @@ dag = DAG(
 
 t1 = BashOperator(
     task_id='extract_data',
-    bash_command='python /path/to/data_engineering_project/extract_data.py',
+    bash_command='python D:\Finpro-Data Engineer\Finpro-DE5\extract_data.py',
     dag=dag,
 )
 
 t2 = BashOperator(
     task_id='transform_data',
-    bash_command='python /path/to/data_engineering_project/transform_data.py',
+    bash_command='python D:\Finpro-Data Engineer\Finpro-DE5\transform_data.py',
     dag=dag,
 )
 
 t3 = BashOperator(
     task_id='load_data',
-    bash_command='python /path/to/data_engineering_project/load_data.py',
+    bash_command='python D:\Finpro-Data Engineer\Finpro-DE5\load_data.py',
     dag=dag,
 )
 
